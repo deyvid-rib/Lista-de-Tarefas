@@ -1,0 +1,183 @@
+@media only screen and (max-width: 1400px) {
+    #add-button{
+        font-size: 20px;
+        img{
+            width: 20px;
+        }
+    }
+    .tarefa-remove-button{
+        font-size: 20px;
+        img{
+            width: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 650px) {
+    #add-button{
+        font-size: 15px;
+        img{
+            width: 10px;
+        }
+    }
+    .tarefa-remove-button{
+        font-size: 15px;
+        img{
+            width: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .tarefa{
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 20px;
+        }
+    }
+    #add-button{
+        font-size: 10px;
+        img{
+            width: 10px;
+        }
+    }
+    .tarefa-remove-button{
+        font-size: 10px;
+        img{
+            width: 10px;
+        }
+    }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(150, 150, 150);
+    padding: 1%;
+}
+
+#input-container{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-top: 1%;
+    padding: 0 5% 0 5%;
+}
+
+input{
+    width: 80%;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 25px;
+    padding-left: 5%;
+}
+
+#add-button{
+    display: flex;
+    width: 20%;
+    height: 100px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+#add-button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+main{
+    height: 395px;
+    margin: 1% 5% 0 5%;
+}
+
+.tarefa{
+    display: flex;
+    box-shadow: 0px 0px 10px rgb(150, 150, 150);
+    height: 80px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 1%;
+    transition: 250ms;
+}
+
+.tarefa-marcada{
+    display: flex;
+    box-shadow: 0px 0px 10px rgb(150, 150, 150);
+    height: 80px;
+    background-color: rgb(180, 255, 190);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 1%;
+    transition: 250ms;
+}
+
+.tarefa-marcada .tarefa-texto{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.tarefa-icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 20%;
+}
+
+.tarefa-texto{
+    display: flex;
+    align-items: center;
+    flex: 60%;
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tarefa-remove-button{
+    display: flex;
+    flex: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.tarefa-remove-button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(150, 150, 150);
+    padding: 2%;
+}
+
+#tecnologias{
+    font-weight: bold;
+}
